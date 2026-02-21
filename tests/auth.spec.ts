@@ -2,7 +2,7 @@ import { expect, test } from "@playwright/test";
 import { HomePage } from "../pages/HomePage";
 import { LoginPage } from "../pages/LoginPage";
 
-test.describe.only("Login UI - AutomationExercise", () => {
+test.describe("Login UI - AutomationExercise", () => {
   test("login invalide affiche un message d’erreur", async ({ page }) => {
     const homePage = new HomePage(page);
     const loginPage = new LoginPage(page);
